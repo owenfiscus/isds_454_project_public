@@ -5,5 +5,5 @@ front/caddy/config/caddy/
 front/caddy/data/caddy/
 front/nginx/html/img
 front/nginx/html/vid
-back/.env
-back/src/api/.env
+# back/.env
+# back/src/api/.env
