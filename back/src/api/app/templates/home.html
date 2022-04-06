@@ -1,0 +1,16 @@
+{%extends "base.html" %} 
+{%block title%}Nutwood Auto Group{% endblock %}
+
+{% block content %}
+<style>#favBtn { display: none; } #searchBtn { display: none; } body { background-color: #141414; }</style>
+
+<div id="main">
+    <button class="get_started nue_get_started" onclick="get_started()">Get Started 🏁</button>
+
+    <video autoplay muted loop id="backdrop">
+        <source src="https://static.nutwoodauto.group/vid/backdrop.mp4" type="video/mp4">
+    </video>
+</div>
+
+<script src="https://nutwoodauto.group/static/scripts/navigation.js"></script>
+{% endblock %}

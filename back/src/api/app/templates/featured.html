@@ -1,0 +1,16 @@
+{%extends "base.html" %} 
+{%block title%}Nutwood Auto Group{% endblock %}
+{% block content %}
+
+<style>#featBtn { display: none; }</style>
+
+<div id="featured_vehicles_title">Featured</div>
+
+<div id="featured_vehicles">
+    <div id="featured_slideshow"></div>
+</div>
+
+<!-- call the cards scripts -->
+<script src="https://nutwoodauto.group/static/scripts/featured_vehicles.js"></script>
+<script src="https://nutwoodauto.group/static/scripts/navigation.js"></script>
+{% endblock %}

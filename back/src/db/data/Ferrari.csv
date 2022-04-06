@@ -1,0 +1,5 @@
+car_id,manufacturer_id,model,trim,vehicle_type_id,msrp_price,door_number,city_mpg,highway_mpg,horsepower,engine,transmission_id,drivetrain_id,height_in,width_in,length_in,wheelbase,curb_weight,fuel_tank_size,web_link
+1,8,F8,Tributo,4,276550,2,15,19,710,3.9-Liter V8,1,1,48,78,182,104.3,3398,17,https://www.ferrari.com/en-US/auto/f8-tributo
+2,8,SF90,Stradale,4,625000,2,15,18,986,4.0-Liter V8 Hybrid,1,3,47,78,185,104.3,3527,15,https://www.ferrari.com/en-US/auto/sf90-stradale
+3,8,296,GTB,4,249000,2,15,18,819,2.9-Liter V6 Twin Turbo Hybrid,1,1,47,77,180,102.4,3240,17,https://www.ferrari.com/en-US/auto/sf90-stradale
+4,8,812,GTS,4,404494,2,12,15,789,6.5-Liter V12,1,1,50.2,77.6,184.8,107.1,3900,24.3,https://www.ferrari.com/en-US/auto/812-gts

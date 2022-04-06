@@ -1,0 +1,39 @@
+version: "3.7"
+
+# internal and external networks
+networks:
+  ext:
+    external: true
+  int:
+    external: true
+    driver: bridge
+
+services:
+  # caddy reverse proxy
+  caddy:
+    container_name: caddy
+    hostname: caddy
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /home/nutwood/isds_454_project/front/caddy/Caddyfile:/etc/caddy/Caddyfile
+      - /home/nutwood/isds_454_project/front/caddy/data:/data
+      - /home/nutwood/isds_454_project/front/caddy/config:/config
+    networks:
+      - ext
+      - int
+
+  # nginx server for static content
+  nginx:
+    container_name: nginx
+    hostname: nginx
+    image: nginx:stable
+    restart: unless-stopped
+    volumes:
+      - /home/nutwood/isds_454_project/front/default.conf:/etc/nginx/conf.d/default.conf
+      - /home/nutwood/isds_454_project/front/nginx/html:/usr/share/nginx/html
+    networks:
+      - int

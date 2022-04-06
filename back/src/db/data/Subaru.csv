@@ -1,0 +1,24 @@
+car_id,manufacturer_id,model,trim,vehicle_type_id,msrp_price,door_number,city_mpg,highway_mpg,horsepower,engine,transmission_id,drivetrain_id,height_in,width_in,length_in,wheelbase,curb_weight,fuel_tank_size,web_link
+1,4,BRZ,Premium,4,27995,2,21,30,205,2.4-Liter 4-cylinder,2,1,49,69,166,101,2815,11,https://www.subaru.com/vehicles/brz/index.html
+2,4,Impreza,Limited,2,18795,4,28,36,152,2.0-Liter 4-cylinder,2,3,57.3,60.6,182.7,105.1,3047,13.2,https://www.subaru.com/vehicles/impreza/index.html
+3,4,Crosstrek,Sport,2,22645,4,25,30,182,2.5-Liter 4-Cylinder,1,3,62.8,71,175.8,104.9,3351,16.6,https://www.subaru.com/vehicles/crosstrek/index.html
+4,4,Legacy,Premium,1,23990,4,27,35,182,2.4-Liter 4-cylinder,1,3,59.1,72.4,190.6,108.3,3781,18.5,https://www.subaru.com/vehicles/legacy/index.html
+5,4,Levorg,GT,7,29800,4,28,33,256,1.8-Liter CB18 turbo H4,2,3,58.7,70.1,184.6,104.3,3351,18,https://www.c-magazine.com/car-reviews/2020-subaru-levorg-2-0-gt-s-eyesight/
+6,4,WRX,Limited,1,32095,4,16,22,268,2.4-Liter 4-cylinder,2,3,58.1,70.7,180.9,104.3,3294,15.9,https://www.subaru.com/vehicles/wrx/index.html
+7,4,Ascent,Premium,5,33470,4,21,27,260,2.4-Liter 4-cylinder,1,3,71.6,76,196.8,113.8,4600,19.3,https://www.subaru.com/vehicles/ascent/models.html
+8,4,Foerster,Limited,2,26370,4,26,33,182,2.5-Liter 4-cylinder,1,3,68.9,72.2,182.7,104.9,3659,16.6,https://www.subaru.com/vehicles/forester/index.html
+9,4,Outback,Limited,1,33795,4,26,33,260,2.0-Liter 4-cylinder,1,3,66.9,74.6,191.3,108.1,3973,18.5,https://www.subaru.com/vehicles/outback/models.html
+10,4,Solterra,Limited,2,45000,4,27,34,215,2 Electric Motors,1,3,65,73.2,184.6,112.2,4453,0,https://www.subaru.com/solterra-ev
+11,4,BRZ,Limited,4,30495,2,21,30,228,2.4-Liter 4-cylinder,2,1,49,69,166,101,2815,11,https://www.subaru.com/vehicles/brz/models.html
+12,4,WRX,Premium,4,30045,4,16,22,271,2.4-Liter 4-cylinder,2,3,58.1,70.7,180.9,104.3,3294,15.9,https://www.subaru.com/vehicles/wrx/models.html
+13,4,WRX,STI,4,37245,4,16,22,271,2.4-Liter 4-cylinder,2,3,58.1,70.7,180.9,104.3,3294,15.9,https://www.subaru.com/vehicles/wrx/index.html
+14,4,Foerster,Touring,2,35495,4,26,33,182,2.5-Liter 4-cylinder,1,3,68.9,72.2,182.7,104.9,3659,16.6,Subaru Forester Compare Vehicles
+15,4,Foerster,Premium,2,28395,4,33,26,182,2.5-Liter 4-cylinder,1,3,68.9,72.2,182.7,104.9,3659,16.6,Subaru Forester Compare Vehicles
+16,4,Foerster,Sport,2,29965,4,33,26,182,2.5-Liter 4-cylinder,1,3,68.9,72.2,182.7,104.9,3659,16.6,Subaru Forester Compare Vehicles
+17,4,Foerster,Wilderness,2,33020,4,25,28,182,2.5-Liter 4-cylinder,1,3,68.9,72.2,182.7,104.9,3659,16.6,Subaru Forester Compare Vehicles
+18,4,Outback,Premium,1,29345,4,26,33,260,2.0-Liter 4-cylinder,1,3,66.9,74.6,191.3,108.1,3973,18.5,2022 Subaru Outback - Models and Trims | Subaru
+19,4,Outback,Touring,1,37695,4,26,33,260,2.0-Liter 4-cylinder,1,3,66.9,74.6,191.3,108.1,3973,18.5,2022 Subaru Outback - Models and Trims | Subaru
+20,4,Outback,Onyx Edition XT,1,35345,4,23,30,260,2.0-Liter 4-cylinder,1,3,66.9,74.6,191.3,108.1,3973,18.5,2022 Subaru Outback - Models and Trims | Subaru
+21,4,Outback,Wilderness,1,37195,4,22,26,260,2.0-Liter 4-cylinder,1,3,66.9,74.6,191.3,108.1,3973,18.5,2022 Subaru Outback - Models and Trims | Subaru
+22,4,Outback,Limited XT,1,38195,4,23,30,260,2.0-Liter 4-cylinder,1,3,66.9,74.6,191.3,108.1,3973,18.5,2022 Subaru Outback - Models and Trims | Subaru
+23,4,Outback,Touring XT,1,40145,4,23,30,260,2.0-Liter 4-cylinder,1,3,66.9,74.6,191.3,108.1,3973,18.5,2022 Subaru Outback - Models and Trims | Subaru

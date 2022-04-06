@@ -1,0 +1,9 @@
+.DS_Store
+back/src/db/database
+back/src/api/app/static/vid
+front/caddy/config/caddy/
+front/caddy/data/caddy/
+front/nginx/html/img
+front/nginx/html/vid
+back/.env
+back/src/api/.env

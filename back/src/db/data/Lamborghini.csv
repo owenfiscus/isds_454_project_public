@@ -1,0 +1,4 @@
+car_ID,manufacturer_id,model,trim,vehicle_type_id,msrp_price,door_number,city_mpg,highway_mpg,horsepower,engine,transmission_id,drivetrain_id,height_in,width_in,length_in,wheelbase,curb_weight,fuel_tank_size,web_link
+1,5,Aventador,SVJ,4,517770,2,9,15,759,6.5-Liter V12,1,3,44.7,89.5,194.6,106.3,3615,19,https://www.lamborghini.com/en-en/models/aventador/aventador-svj
+2,5,Huracan,STO,4,327838,2,13,18,630,5.2-Liter V10,1,1,48,88,179,103.1,3172,18,https://www.lamborghini.com/en-en/models/huracan/huracan-sto
+3,5,Urus,None,2,218900,4,12,17,641,4.0-Liter V8,1,3,64.5,85.9,201.3,118.1,4844,20,https://www.lamborghini.com/en-en/models/urus/urus

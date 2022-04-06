@@ -1,0 +1,16 @@
+{%extends "base.html" %} 
+{%block title%}Nutwood Auto Group{% endblock %}
+{% block content %}
+
+<style>#favBtn { display: none; }</style>
+
+<div id="page-mask"></div>
+<div class="favorites" id="favorites" >
+    <div id="placeholder">Vehicles you favorite will appear here ❤️</div>
+    <div class="favorites_wrapper" id="favorites_wrapper"></div>
+</div>
+
+<!-- call the cards scripts -->
+<script src="https://nutwoodauto.group/static/scripts/favorites.js"></script>
+<script src="https://nutwoodauto.group/static/scripts/navigation.js"></script>
+{% endblock %}

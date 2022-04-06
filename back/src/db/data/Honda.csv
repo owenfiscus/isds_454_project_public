@@ -1,0 +1,46 @@
+car_id,manufacturer_id,model,trim,vehicle_type_id,msrp_price,door_number,city_mpg,highway_mpg,horsepower,engine,transmission_id,drivetrain_id,height_in,width_in,length_in,wheelbase,curb_weight,fuel_tank_size,web_link
+1,3,Civic Sedan,LX,1,22350,4,31,40,158,In-Line 4-Cylinder,6,2,55.7,70.9,183.3,107.7,2877,12.4,https://automobiles.honda.com/civic-sedan
+2,3,Civic Sedan,Sport,1,23750,4,30,37,158,In-Line 4-Cylinder,6,2,55.7,70.9,183.3,107.7,2877,12.4,https://automobiles.honda.com/civic-sedan
+3,3,Civic Sedan,EX,1,25350,4,33,42,180,In-Line 4-Cylinder with Turbocharger,6,2,55.7,70.9,183.3,107.7,2877,12.4,https://automobiles.honda.com/civic-sedan
+4,3,Civic Sedan,Touring,1,28950,4,31,38,180,In-Line 4-Cylinder with Turbocharger,6,2,55.7,70.9,183.3,107.7,2877,12.4,https://automobiles.honda.com/civic-sedan
+5,3,Accord Sedan,LX,1,26120,4,30,38,192,In-Line 4-Cylinder with Turbocharger,6,2,57.1,73.3,196.1,111.4,3150,14.8,https://automobiles.honda.com/accord-sedan
+6,3,Accord Sedan,Sport,1,28580,4,29,35,192,In-Line 4-Cylinder with Turbocharger,6,2,57.1,73.3,196.1,111.4,3223,14.8,https://automobiles.honda.com/accord-sedan
+7,3,Accord Sedan,Sport Special Edt.,1,30070,4,29,35,252,In-Line 4-Cylinder with Turbocharger,6,2,57.1,73.3,196.1,111.4,3230,14.8,https://automobiles.honda.com/accord-sedan
+8,3,Accord Sedan,EX-L,1,32440,4,48,47,212,In-Line 4-Cylinder with Turbocharger,6,2,57.1,73.3,196.1,111.4,3326,12.8,https://automobiles.honda.com/accord-sedan
+9,3,Accord Sedan,Hybrid ,1,27320,4,48,47,212,In-Line 4-Cylinder,6,2,57.1,73.3,196.1,111.4,3375,12.8,https://automobiles.honda.com/accord-sedan
+10,3,Accord Sedan,Hybrid Sport,1,30670,4,44,41,212,In-Line 4-Cylinder,6,2,57.1,73.3,196.1,111.4,3221,14.8,https://automobiles.honda.com/accord-sedan
+11,3,Clarity Hybrid,Standard,1,33400,4,44,42,212,In-Line 4-Cylinder,6,2,58.2,73.9,192.7,108.3,"4,052",7,https://automobiles.honda.com/clarity
+12,3,Clarity Hybrid,Touring,1,36600,4,44,42,212,In-Line 4-Cylinder,6,2,58.2,73.9,192.7,108.3,"4,059",7,https://automobiles.honda.com/clarity
+13,3,Insight,EX,1,25760,4,55,52,212,In-Line 4-Cylinder,6,2,55.6,71.6,183.6,106.3,3000,10.6,https://automobiles.honda.com/insight
+14,3,Insight,Touring,1,29790,4,51,48,212,In-Line 4-Cylinder,6,2,55.6,71.6,183.6,106.3,3078,10.6,https://automobiles.honda.com/insight
+15,3,HR-V,LX,2,21870,4,27,30,141,In-Line 4-Cylinder,6,3,63.2,69.8,170.4,102.8,2906,13.2,https://automobiles.honda.com/hr-v
+16,3,HR-V,Sport,2,23820,4,26,30,141,In-Line 4-Cylinder,6,3,63.2,70.5,170.4,102.8,2928,13.2,https://automobiles.honda.com/hr-v
+17,3,HR-V,EX,2,25070,4,26,30,141,In-Line 4-Cylinder,6,3,63.2,69.8,170.4,102.8,2959,13.2,https://automobiles.honda.com/hr-v
+18,3,HR-V,EX-L,2,26670,4,26,30,141,In-Line 4-Cylinder,6,3,63.2,69.8,170.4,102.8,2974,13.2,https://automobiles.honda.com/hr-v
+19,3,CR-V,LX,2,26400,4,28,30,212,In-Line 4-Cylinder with Turbocharger,6,3,66.1,73,182.1,104.8,3337,14,https://automobiles.honda.com/cr-v
+20,3,CR-V,Special Edition,2,27600,4,28,30,212,In-Line 4-Cylinder with Turbocharger,6,3,66.1,73,182.1,104.8,3345,14,https://automobiles.honda.com/cr-v
+21,3,CR-V,EX,2,28910,4,28,30,212,In-Line 4-Cylinder with Turbocharger,6,3,66.1,73,182.1,104.8,3398,14,https://automobiles.honda.com/cr-v
+22,3,CR-V,EX-L,2,31500,4,28,30,212,In-Line 4-Cylinder with Turbocharger,6,3,66.1,73,182.1,104.8,3413,14,https://automobiles.honda.com/cr-v
+23,3,PIlot,Sport,2,37580,4,20,27,280,v6,1,3,70.6,78.6,196.5,110,4030,19.5,https://automobiles.honda.com/pilot
+24,3,Pilot,EX-L,2,39810,4,20,27,280,v6,1,3,70.6,78.6,210.9,110,4251,19.5,https://automobiles.honda.com/pilot
+25,3,Pilot,Special Edition,2,40410,4,20,27,280,v6,1,3,70.6,78.6,225.3,110,4127,19.5,https://automobiles.honda.com/pilot
+26,3,Pilot,TrailSport,2,44310,4,20,27,280,v6,1,3,70.6,78.6,239.7,110,4319,19.5,https://automobiles.honda.com/pilot
+27,3,Pilot,Touring,2,44370,4,20,27,280,v6,1,3,70.6,78.6,254.1,110,4127,19.5,https://automobiles.honda.com/pilot
+28,3,Pilot,Elite,2,49870,4,20,27,280,v6,1,3,70.6,78.6,268.5,110,4319,19.5,https://automobiles.honda.com/pilot
+29,3,Pilot,Black,2,51370,4,20,27,280,v6,1,3,70.6,78.6,282.9,110,4321,19.5,https://automobiles.honda.com/pilot
+30,3,PassPort,EX-L,2,38870,4,19,24,280,v6,1,3,110.98,78.6,189.1,110.98,4057,19.5,https://automobiles.honda.com/passport
+31,3,PassPort,TrailSport,2,42470,4,19,24,280,v6,1,3,110.91,78.6,189.1,110.98,4229,19.5,https://automobiles.honda.com/passport
+32,3,PassPort,Elite,2,45430,4,19,24,280,v6,1,3,110.91,78.6,189.1,110.98,4262,19.5,https://automobiles.honda.com/passport
+33,3,Odyssey,LX,6,33040,4,19,28,280,v6,1,2,68.3,78.5,205.2,118.1,4398,19.5,https://automobiles.honda.com/odyssey
+34,3,Odyssey,EX,6,36440,4,19,28,280,v6,1,2,69.6,78.5,205.2,118.1,4480,19.5,https://automobiles.honda.com/odyssey
+35,3,Odyssey,EX-L,6,39710,4,19,28,280,v6,1,2,69.6,78.5,205.2,118.1,4526,19.5,https://automobiles.honda.com/odyssey
+36,3,Odyssey,Touring,6,43750,4,19,28,280,v6,1,2,69.6,78.5,205.2,118.1,4561,19.5,https://automobiles.honda.com/odyssey
+37,3,Odyssey,Elite,6,48770,4,19,28,280,v6,1,2,69.6,78.5,205.2,118.1,4561,19.5,https://automobiles.honda.com/odyssey
+38,3,Ridgeline,Sport,3,37640,4,18,24,280,v6,1,2,70.8,78.6,210.2,125.2,4436,19.5,https://automobiles.honda.com/ridgeline
+39,3,Ridgeline,RTL,3,40620,4,18,24,280,v6,1,2,70.8,78.6,210.2,125.2,4475,19.5,https://automobiles.honda.com/ridgeline
+40,3,Ridgeline,RTL-E,3,43570,4,18,24,280,v6,1,2,70.8,78.6,210.2,125.2,4510,19.5,https://automobiles.honda.com/ridgeline
+41,3,Ridgeline,Black,3,45070,4,18,24,280,v6,1,2,70.8,78.6,210.2,125.2,4510,19.5,https://automobiles.honda.com/ridgeline
+42,3,Civic Si,Si,1,27300,4,27,31,200,In-Line 4-Cylinder with Turbocharger,1,2,55.5,70.9,184,107.7,2906,12.39,https://automobiles.honda.com/civic-si-sedan
+43,3,Civic Si,HPT,1,27500,4,27,31,200,In-Line 4-Cylinder with Turbocharger,1,2,55.5,70.9,184,107.7,2906,12.39,https://automobiles.honda.com/civic-si-sedan
+44,3,Civic Si ,TCA,1,52500,4,27,31,220,In-Line 4-Cylinder with Turbocharger,1,2,55.5,70.9,184,107.7,2906,12.4,https://automobiles.honda.com/civic-si-sedan
+45,3,Civic R,TCR,1,172238,4,0,0,340,In-Line 4-Cylinder with Turbocharger,1,2,55.5,70.9,184,107.7,2906,16,https://hpd.honda.com/Articles/Touring/TypeR

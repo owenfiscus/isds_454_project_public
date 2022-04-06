@@ -1,0 +1,46 @@
+version: "3.8"
+
+networks:
+  int:
+    external: true
+    driver: bridge
+
+services:
+
+  api:
+    hostname: endpoint
+    build:
+      context: src/api
+      dockerfile: Dockerfile
+    command: flask run --host 0.0.0.0
+    volumes:
+      - ./src/api/:/usr/src/api/
+      - ./src/warehouse/:/usr/src/warehouse
+    environment:
+      - FLASK_APP=app/__init__.py
+      - FLASK_ENV=development
+      - DB_HOST=back_db
+      - url=https://nutwoodauto.group
+    ports:
+      - 5000:5000
+    depends_on:
+      - db
+    networks:
+      - int
+    
+  db:
+    build:
+      context: src/db
+      dockerfile: Dockerfile
+    restart: always
+    hostname: back_db
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    # delete this volume mount on the HOST SIDE before rebuilding the container!
+    volumes:
+      - ./src/db/database:/var/lib/postgresql/data
+    networks:
+      - int
+#    ports:
+#      - 5432:5432

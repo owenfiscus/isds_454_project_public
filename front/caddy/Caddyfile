@@ -1,0 +1,27 @@
+{
+    # Global options block. Entirely optional, https is on by default
+    # Optional email key for lets encrypt
+    email owen@fiscus.net
+    # Optional staging lets encrypt for testing. Comment out for production.
+    # acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
+}
+
+# webserver
+nutwoodauto.group:443 {
+    reverse_proxy api:5000
+}
+
+static.nutwoodauto.group:443 {
+    reverse_proxy nginx:80 {
+        header_down -Access-Control-Allow-Origin
+    }
+
+    header {
+        Access-Control-Allow-Origin *
+    }
+}
+
+# redirect www to nutwoodauto.group
+www.nutwoodauto.group:443 {
+    redir https://nutwoodauto.group{uri}
+}

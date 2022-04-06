@@ -1,0 +1,57 @@
+{%extends "base.html" %} 
+{%block title%}Nutwood Auto Group{% endblock %}
+{% block content %}
+
+<style>#searchBtn { display: none; }</style>
+
+<div id="daily_vehicle"><!-- add --></div>
+
+<div id="search_wrapper">
+    <div id="input_panel">
+        <div id="input_panel_upper">
+            <select class="drop_down" id="drop_down_1" name="dropdown">
+                <option class="make_option" value="" disabled selected>Make</option>
+                <option class="make_option" value="Honda">Honda</option>
+                <option class="make_option" value="Toyota">Toyota</option>
+                <option class="make_option" value="BMW">BMW</option>
+                <option class="make_option" value="Ferrari">Ferrari</option>
+                <option class="make_option" value="Ford">Ford</option>
+                <option class="make_option" value="Lamborghini">Lamborghini</option>
+                <option class="make_option" value="Subaru">Subaru</option>
+            </select>
+
+            <select class="drop_down" id="drop_down_2" name="dropdown">
+                <option value="" disabled selected>Model</option>
+            </select>
+
+            <button id="search_button" onclick="search()" class="search_button nue_search_button" type="button" ><span class="material-icons-round md-48 color toggle">search</span></button>
+        </div>
+
+        <div id="input_panel_lower">
+            <div class="range_slider_title">Price</div>
+            <div class="range_slider" id="range_slider_price">
+                <span class="range_values"></span>
+                <input value="0" min="0" max="625000" step="5000" type="range">
+                <input value="625000" min="0" max="625000" step="5000" type="range">
+            </div>
+
+            <div class="range_slider_title">Horsepower</div>
+            <div class="range_slider" id="range_slider_horsepower">
+                <span class="range_values"></span>
+                <input value="0" min="0" max="1500" step="25" type="range">
+                <input value="1500" min="0" max="1500" step="25" type="range">
+            </div>
+
+            <div class="range_slider_title">MPG</div>
+            <div class="range_slider" id="range_slider_mpg">
+                <span class="range_values"></span>
+                <input value="0" min="0" max="100" step="5" type="range">
+                <input value="100" min="0" max="100" step="5" type="range">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- call the search scripts -->
+<script src="https://nutwoodauto.group/static/scripts/search.js"></script>
+{% endblock %}

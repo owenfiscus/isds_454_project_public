@@ -1,0 +1,77 @@
+{%extends "base.html" %} 
+{%block title%}Nutwood Auto Group{% endblock %}
+
+{% block content %}
+<style>#aboutBtn { display: none; }</style>
+
+<div id="about_wrapper">
+    <div class="about">
+        <h1>About Us</h1>
+        <p>What is Nutwood Auto Group?</p>
+        <p>Nutwood Auto Group is an interactive website that provides information about car features and high quality images all in one place, making your next vehicle search effortless. Our ever-growing dynamic database is accessible to anyone and through our user friendly vehicle search system. By using our fully customized search engine, you will be able to not only search your favorite rides error and bug free; but “favorite” cars you would like to view at a future time. No sign up, monthly fees, or account are necessary, and the vehicles you decide to search for and save for later are known only to you. The data is categorized by car enthusiasts search preferences which is formulated to bring you easily understandable data as well as those need to know details like horsepower, engine size, and fuel economy. We hope you will have a look around and enjoy using Nutwood Auto Group to help make your next vehicle purchasing decision.</p>
+
+        <h1>The Team</h1>
+    </div>
+
+    <div class="about_cards">
+        <div class="about_card about_cards_row_one about_collapsed" id="about_card_andres">
+            <div class="about_photo nue_about_name" id="about_photo_andres"></div>
+            <div class="about_name" id="about_name_andres">
+                <span>Andres</span>
+                <button class="expand_close_about_card nue_expand_close_about_card" onclick="expand_close_about_card(about_more_andres, about_card_andres, expand_close_about_card_span_andres, about_name_andres)" type="button"><span id="expand_close_about_card_span_andres" class="material-icons-round expand_favorite_span">expand_more</span></button>
+            </div>
+            <div class="about_more nue_about_more" id="about_more_andres">
+                <span class="about_more_info">Scrum Master</span>
+            </div>
+        </div>
+
+        <div class="about_card about_cards_row_one about_collapsed" id="about_card_colt">
+            <div class="about_photo nue_about_name" id="about_photo_colt"></div>
+            <div class="about_name" id="about_name_colt">
+                <span>Colt</span>
+                <button class="expand_close_about_card nue_expand_close_about_card" onclick="expand_close_about_card(about_more_colt, about_card_colt, expand_close_about_card_span_colt, about_name_colt)" type="button"><span id="expand_close_about_card_span_colt" class="material-icons-round expand_favorite_span">expand_more</span></button>
+            </div>
+            <div class="about_more nue_about_more" id="about_more_colt">
+                <div class="about_more_info"><span>Analyst</span></div>
+            </div>
+        </div>
+            
+        <div class="about_card about_cards_row_two about_collapsed" id="about_card_jesse">
+            <div class="about_photo nue_about_name" id="about_photo_jesse"></div>
+            <div class="about_name" id="about_name_jesse">
+                <span>Jesse</span>
+                <button class="expand_close_about_card nue_expand_close_about_card" onclick="expand_close_about_card(about_more_jesse, about_card_jesse, expand_close_about_card_span_jesse, about_name_jesse)" type="button"><span id="expand_close_about_card_span_jesse" class="material-icons-round expand_favorite_span">expand_more</span></button>
+            </div>
+            <div class="about_more nue_about_more" id="about_more_jesse">
+                <span class="about_more_info">Analyst <br> (Not Nicolas Cage)</span>
+            </div>
+        </div>
+
+        <div class="about_card about_cards_row_two" id="about_card_jt">
+            <div class="about_photo nue_about_name" id="about_photo_jt"></div>
+            <div class="about_name" id="about_name_jt">
+                <span>JT</span>
+                <button class="expand_close_about_card nue_expand_close_about_card" onclick="expand_close_about_card(about_more_jt, about_card_jt, expand_close_about_card_span_jt, about_name_jt)" type="button"><span id="expand_close_about_card_span_jt" class="material-icons-round expand_favorite_span">expand_more</span></button>
+            </div>
+            <div class="about_more nue_about_more" id="about_more_jt">
+                <span class="about_more_info">Developer</span>
+            </div>
+        </div>
+
+        <div class="about_card about_cards_row_two" id="about_card_owen">
+            <div class="about_photo nue_about_name" id="about_photo_owen"></div>
+            <div class="about_name" id="about_name_owen">
+                <span>Owen</span>
+                <button class="expand_close_about_card nue_expand_close_about_card" onclick="expand_close_about_card(about_more_owen, about_card_owen, expand_close_about_card_span_owen, about_name_owen)" type="button"><span id="expand_close_about_card_span_owen" class="material-icons-round expand_favorite_span">expand_more</span></button>
+            </div>
+            <div class="about_more nue_about_more" id="about_more_owen">
+                <span class="about_more_info">Project Owner & Developer</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- call about.js script -->
+<script src="https://nutwoodauto.group/static/scripts/about.js"></script>
+<script src="https://nutwoodauto.group/static/scripts/navigation.js"></script>
+{% endblock %}

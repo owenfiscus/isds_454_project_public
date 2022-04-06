@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <!-- meta tags -->
+    <meta name="robots" content="none" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="https://nutwoodauto.group/static/styles.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="https://static.nutwoodauto.group/img/favicon.ico">
+    <!-- google material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <!-- poppins - google font - https://fonts.google.com/specimen/Poppins?category=Sans+Serif#standard-styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <nav class="topNav">
+          <div title="Home" id="lLwrap"><a id="logoLink" href="./">🏎 </a></div>
+          <div id="navForm">
+                <button title="Search" id="searchBtn" onclick="open_search()" style="margin-left: .5rem;" class="navBtn nueBtn" type="button" ><span class="material-icons-round md-48 color toggle">search</span></button>
+                <button title="Favorite vehicles" id="favBtn" onclick="open_favorites()" style="margin-left: .5rem;" class="navBtn nueBtn" type="button" ><span class="material-icons-round md-48 color toggle">favorite</span></button>
+                <button title="Featured vehicles" id="featBtn" onclick="open_featured()" style="margin-left: .5rem;" class="navBtn nueBtn" type="button" ><span class="material-icons-round md-48 color toggle">image</span></button>
+                <button title="About us" id="aboutBtn" onclick="open_about()" style="margin-left: .5rem;" class="navBtn nueBtn" type="button" ><span class="material-icons-round md-48 color toggle">sentiment_satisfied</span></button>
+                <button title="Light or dark theme" id="ldBtn" onclick="light_dark()" style="margin-left: .5rem;" class="navBtn nueBtn" type="button" ><span class="material-icons-round md-48 color toggle">dark_mode</span></button>
+          </div>
+        </nav>
+        {% block content%} 
+        {% endblock %}
+        <footer>
+          <div id="leftFoot">
+              <ul class="footUl">
+                  <li class="footLi"><p class="footText">© Nutwod Automotive Group 2022</p></li>
+              </ul>
+          </div>
+
+          <div id="midFoot">
+              <ul class="footUl">
+                  <li class="footLi"><p class="footText">Made with ❤️ by Andres, Colt, Jesse, JT, & Owen</p></li>
+              </ul>
+          </div>
+  
+          <div id="rightFoot">
+              <ul class="footUl">
+                  <li class="footLi"><a href="https://github.com/owenfiscus/isds_454_project_public"><p class="footText">GitHub</p></a></li>
+              </ul>
+          </div>
+      </footer>
+    </body>
+    <script src="https://nutwoodauto.group/static/scripts/light_dark_toggle.js"></script>
+    <script src="https://nutwoodauto.group/static/scripts/navigation.js"></script>
+</html>
