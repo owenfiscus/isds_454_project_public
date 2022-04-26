@@ -1,0 +1,69 @@
+{%extends "base.html" %} 
+{%block title%}Nutwood Auto Group{% endblock %}
+{% block content %}
+<div id="analytics_placeholder">
+  <div id="analytics_placeholder_box">
+    <p id="analytics_loading_text">Loading analytics...</p>
+    <div class="ripple">
+      <div class="ripple-inner"></div>
+      <div class="ripple-inner"></div>
+    </div>
+  </div>
+</div>
+
+<div id="analytics_result">
+  <div id="analytics_chart_wrap">
+    <div class="chart_bg"><div id='chart0' class='analytics_chart'></div></div>
+    <div class="chart_bg"><div id='chart1' class='analytics_chart'></div></div>
+    <div class="chart_bg"><div id='chart2' class='analytics_chart'></div></div>
+    <div class="chart_bg"><div id='chart3' class='analytics_chart'></div></div>
+    <div class="chart_bg"><div id='chart4' class='analytics_chart'></div></div>
+
+    <div id="analytics_table_wrap"> 
+        {{df_html | safe}} 
+    </div>
+  </div>
+</div>
+
+<div id="analytics_result_spacer"></div>
+
+<!-- plotly scripts -->
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = {{graphJSON | safe}};
+  Plotly.plot('chart0',graphs,{});
+</script>
+
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = {{graphJSON2 | safe}};
+  Plotly.plot('chart1',graphs,{});
+</script>
+
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = {{graphJSON3 | safe}};
+  Plotly.plot('chart2',graphs,{});
+</script>
+
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = {{graphJSON4 | safe}};
+  Plotly.plot('chart3',graphs,{});
+</script>
+
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = {{graphJSON4 | safe}};
+  Plotly.plot('chart3',graphs,{});
+</script>
+
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = {{graphJSON5 | safe}};
+  Plotly.plot('chart4',graphs,{});
+</script>
+
+<!-- general scripts -->
+<script src="https://nutwoodauto.group/static/scripts/al_result.js"></script>
+{% endblock %}

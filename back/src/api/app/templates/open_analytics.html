@@ -1,0 +1,58 @@
+{%extends "base.html" %} 
+{%block title%}Nutwood Auto Group{% endblock %}
+{% block content %}
+<style>#analyticsBtn { display: none; }</style>
+
+<div id="analytics_search_full_wrap">
+  <div id="analytics_inputs_wrap">
+    <form id="analytics_form">
+        <select class="drop_down" id="analytics_drop_down_1" name="dropdown">
+          <option class="make_option" value="" disabled selected>Make One</option>
+          <option class="make_option" value="Honda">Honda</option>
+          <option class="make_option" value="Toyota">Toyota</option>
+          <option class="make_option" value="BMW">BMW</option>
+          <option class="make_option" value="Ferrari">Ferrari</option>
+          <option class="make_option" value="Ford">Ford</option>
+          <option class="make_option" value="Lamborghini">Lamborghini</option>
+          <option class="make_option" value="Subaru">Subaru</option>
+        </select>
+        <select class="drop_down" id="analytics_drop_down_2" name="dropdown">
+          <option class="make_option" value="" disabled selected>Make Two</option>
+          <option class="make_option" value="Honda">Honda</option>
+          <option class="make_option" value="Toyota">Toyota</option>
+          <option class="make_option" value="BMW">BMW</option>
+          <option class="make_option" value="Ferrari">Ferrari</option>
+          <option class="make_option" value="Ford">Ford</option>
+          <option class="make_option" value="Lamborghini">Lamborghini</option>
+          <option class="make_option" value="Subaru">Subaru</option>
+        </select>
+        <select class="drop_down" id="analytics_drop_down_3" name="dropdown">
+            <option class="make_option" value="" disabled selected>Drivetrain</option>
+            <option class="make_option" value="AWD">AWD</option>
+            <option class="make_option" value="FWD">FWD</option>
+            <option class="make_option" value="RWD">RWD</option>
+          </select>
+          <select class="drop_down" id="analytics_drop_down_4" name="dropdown">
+            <option class="make_option" value="" disabled selected>Transmission</option>
+            <option class="make_option" value="Automatic">Automatic</option>
+            <option class="make_option" value="Manual">Manual</option>
+            <option class="make_option" value="CVT">CVT</option>
+            <option class="make_option" value="ECT">ECT</option>
+            <option class="make_option" value="ECVT">ECVT</option>
+            <option class="make_option" value="ECT-i">ECT-i</option>
+          </select>
+
+        <div class="cb" id="analytics_cb_1"><input type="checkbox" id="analytics_checkbox_1" name="msrp" value="msrp"><label for="analytics_checkbox_1"></label><br><div class="analytics_checkbox_label">MSRP</div></div>
+        <div class="cb" id="analytics_cb_2"><input type="checkbox" id="analytics_checkbox_2" name="fuel_tank_size" value="fuel_tank_size"><label for="analytics_checkbox_2"></label><br><div class="analytics_checkbox_label">Tank Size</div></div>
+        <div class="cb" id="analytics_cb_3"><input type="checkbox" id="analytics_checkbox_3" name="mpg" value="mpg"><label for="analytics_checkbox_3"></label><br><div class="analytics_checkbox_label">Fuel Economy</div></div>
+        <div class="cb" id="analytics_cb_4"><input type="checkbox" id="analytics_checkbox_4" name="horsepower" value="horsepower"><label for="analytics_checkbox_4"></label><br><div class="analytics_checkbox_label">Horsepower</div></div>
+
+        <button id="analytics_search_button" onclick="generate_analytics(drop_down_1,drop_down_2)" class="search_button nue_search_button" type="button" ><span class="material-icons-round md-48 color toggle">search</span></button>
+    </form>
+  </div>
+
+  <div id="analytics_error_wrap"><div id="analytics_error"><h1 id="analytics_error_text"></h1></div></div>
+</div>
+
+<script src="https://nutwoodauto.group/static/scripts/open_analytics.js"></script>
+{% endblock %}

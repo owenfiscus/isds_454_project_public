@@ -3,6 +3,7 @@ const endpoint = "https://nutwoodauto.group/query/json"
 const iext = '.jpg'
 const iendpoint = "https://static.nutwoodauto.group/img/"
 const cards = document.getElementById('cards');
+const vehicle_base_url = "https://nutwoodauto.group/vehicle";
 
 // vars
 var arg = "?manu=";
@@ -129,6 +130,7 @@ window.onload = function() {
             var mlength = data.length_in[i] + '"';
             var mwheelbase = data.wheelbase[i] + '"';
             var mweight = data.curb_weight[i] + 'lbs';
+            var vehicle_page_url = `${vehicle_base_url}?manu=${data.manufacturer[i]}&car_id=${data.car_id[i]}`;
             
             var modal = `
                         <div class="modal nuemodal" id="${modalid}" style="display: none;">
@@ -155,7 +157,8 @@ window.onload = function() {
                                 <div class="mrow"><p class="mspec"><span class="material-icons-round">settings</span> Drive Train: </p><p class="mval">${dtval}</p></div>
                             </div>
                           </div>
-                          <div class="modal_manu_link"><a href="${manulink}">Manufacturer Website <span class="material-icons-round">launch</span></p></div>
+                          <div class="modal_vehicle_link"><a href="${vehicle_page_url}">See More About This Vehicle <span class="material-icons-round">launch</span></a></div>
+                          <div class="modal_manu_link"><a href="${manulink}">Manufacturer Website <span class="material-icons-round">launch</span></div>
                         </div>`;
 
             // add the modal element to html

@@ -1,6 +1,6 @@
 // define variables & constants
-var drop_down_1 = document.getElementById('drop_down_1');
-var drop_down_2 = document.getElementById('drop_down_2');
+var drop_down_1 = document.getElementById('search_drop_down_1');
+var drop_down_2 = document.getElementById('search_drop_down_2');
 
 var price_values = {};
 var horsepower_values = {};
@@ -137,3 +137,16 @@ function get_slider_values(){
           }
         }
   }
+
+// reset dropdowns when returned to page with back button
+window.addEventListener("pageshow", () => {
+  // dropdown1
+  // set dropdown1 index to 0
+  drop_down_1.selectedIndex = 0;
+  
+  // dropdown2
+  // remove previous options
+  remove_elements(drop_down_2);
+  // add the default option
+  drop_down_2.insertAdjacentHTML('afterbegin', `<option value="" disabled selected>Model</option>`);
+});

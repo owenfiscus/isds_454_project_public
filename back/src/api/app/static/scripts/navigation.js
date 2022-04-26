@@ -14,3 +14,6 @@ function open_featured() { window.location = "./featured" }
 
 // open about page
 function open_about() { window.location = "./about" }
+
+// open analytics page
+function open_analytics() { window.location = "./analytics" }

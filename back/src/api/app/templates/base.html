@@ -25,32 +25,34 @@
                 <button title="Search" id="searchBtn" onclick="open_search()" style="margin-left: .5rem;" class="navBtn nueBtn" type="button" ><span class="material-icons-round md-48 color toggle">search</span></button>
                 <button title="Favorite vehicles" id="favBtn" onclick="open_favorites()" style="margin-left: .5rem;" class="navBtn nueBtn" type="button" ><span class="material-icons-round md-48 color toggle">favorite</span></button>
                 <button title="Featured vehicles" id="featBtn" onclick="open_featured()" style="margin-left: .5rem;" class="navBtn nueBtn" type="button" ><span class="material-icons-round md-48 color toggle">image</span></button>
+                <button title="Vehicle analytics" id="analyticsBtn" onclick="open_analytics()" style="margin-left: .5rem;" class="navBtn nueBtn" type="button" ><span class="material-icons-round md-48 color toggle">analytics</span></button>
                 <button title="About us" id="aboutBtn" onclick="open_about()" style="margin-left: .5rem;" class="navBtn nueBtn" type="button" ><span class="material-icons-round md-48 color toggle">sentiment_satisfied</span></button>
                 <button title="Light or dark theme" id="ldBtn" onclick="light_dark()" style="margin-left: .5rem;" class="navBtn nueBtn" type="button" ><span class="material-icons-round md-48 color toggle">dark_mode</span></button>
           </div>
         </nav>
         {% block content%} 
         {% endblock %}
-        <footer>
-          <div id="leftFoot">
-              <ul class="footUl">
-                  <li class="footLi"><p class="footText">© Nutwod Automotive Group 2022</p></li>
-              </ul>
-          </div>
-
-          <div id="midFoot">
-              <ul class="footUl">
-                  <li class="footLi"><p class="footText">Made with ❤️ by Andres, Colt, Jesse, JT, & Owen</p></li>
-              </ul>
-          </div>
-  
-          <div id="rightFoot">
-              <ul class="footUl">
-                  <li class="footLi"><a href="https://github.com/owenfiscus/isds_454_project_public"><p class="footText">GitHub</p></a></li>
-              </ul>
-          </div>
-      </footer>
     </body>
+
+    <footer>
+        <div id="leftFoot">
+            <ul class="footUl">
+                <li class="footLi"><p class="footText">© Nutwod Automotive Group 2022</p></li>
+            </ul>
+        </div>
+
+        <div id="midFoot">
+            <ul class="footUl">
+                <li class="footLi"><p class="footText">Made with ❤️ by Andres, Colt, Jesse, JT, & Owen</p></li>
+            </ul>
+        </div>
+
+        <div id="rightFoot">
+            <ul class="footUl">
+                <li class="footLi"><a href="https://github.com/owenfiscus/isds_454_project_public"><p class="footText">GitHub</p></a></li>
+            </ul>
+        </div>
+    </footer>
     <script src="https://nutwoodauto.group/static/scripts/light_dark_toggle.js"></script>
     <script src="https://nutwoodauto.group/static/scripts/navigation.js"></script>
 </html>

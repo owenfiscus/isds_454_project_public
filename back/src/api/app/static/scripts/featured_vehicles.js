@@ -1,11 +1,10 @@
 // define constants
 const random_json_endpoint = "https://nutwoodauto.group/query/random_json";
-
-// define variables
-var image_base_url = "https://static.nutwoodauto.group/img";
-var image_extension = '.jpg';
-var featured_slideshow = document.getElementById('featured_slideshow');
-var featured_vehicles = document.getElementById('featured_vehicles');
+const vehicle_base_url = "https://nutwoodauto.group/vehicle";
+const image_base_url = "https://static.nutwoodauto.group/img";
+const image_extension = '.jpg';
+const featured_slideshow = document.getElementById('featured_slideshow');
+const featured_vehicles = document.getElementById('featured_vehicles');
 
 // pull model data and create options
 window.onload = function populate_images() {
@@ -27,11 +26,13 @@ window.onload = function populate_images() {
             if (xhr.status == 404) {
               image_url = "https://static.nutwoodauto.group/img/fallback.png"
             }
+            
+            var vehicle_page_url = `${vehicle_base_url}?manu=${data.manufacturer[i]}&car_id=${data.car_id[i]}`;
 
             var label = `${data.manufacturer[i]} ${data.model[i]} ${data.trim_[i]}`;
 
             var image = `<img class="slideshow_image" src="${image_url}"></img>`;
-            var image_label = `<div class="image_label">${label}</div>`;
+            var image_label = `<div class="image_label">${label}<a href="${vehicle_page_url}"><span class="material-icons-round">open_in_new</span></a></div>`;
 
             featured_vehicles.insertAdjacentHTML('beforeend', image_label);
             featured_slideshow.insertAdjacentHTML('beforeend', image);
