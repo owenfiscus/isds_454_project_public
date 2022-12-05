@@ -13,8 +13,6 @@ HTML: `/back/src/api/app/templates/`
 
 CSS: `/back/src/api/app/static/styles.css`
 
-JavaScript: `/back/src/api/app/static/scripts/`
-
 Of course, you should feel free to take a look at any portions of the source code that you wish.
 
 # Website Link
